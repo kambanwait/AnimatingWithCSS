@@ -1,0 +1,25 @@
+header.pageHeader {
+  background: rgba(115,  98,  110, 1 );
+  margin: 0 auto 50px;
+  padding: 150px 0;
+  h1 {
+    font-size: 37px;
+    color: $vapor;
+    @media #{$medium-up} {
+      font-size: 55px;
+    }
+  }
+}
+
+article {
+  // background: rgba(148, 82, 82, 1 );
+  #choose {
+    margin: 25px auto;
+  }
+}
+
+footer {
+  small {
+    display: inline-block;
+  }
+}
