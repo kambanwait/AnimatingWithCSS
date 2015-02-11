@@ -1,25 +1,55 @@
-header.pageHeader {
-  background: rgba(115,  98,  110, 1 );
-  margin: 0 auto 50px;
-  padding: 150px 0;
-  h1 {
-    font-size: 37px;
-    color: $vapor;
-    @media #{$medium-up} {
-      font-size: 55px;
-    }
+.button {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  margin: 25px 0 50px;
+  &:hover {
+    border: 1px solid #007095;
+    background-color: #fff;
+    color: #007095;
   }
 }
 
+header.pageHeader {
+  background: rgba(115,  98,  110, 1 );
+  margin: 0 auto 25px;
+  padding: 150px 0;
+  display: table;
+  max-width: none;
+  div {
+    display: table-cell;
+    h1 {
+      vertical-align: middle;
+      font-size: 37px;
+      color: white;
+      @media #{$medium-up} {
+        font-size: 55px;
+      }
+    }
+    h4 {
+      color: $white-smoke;
+    }
+  }  
+}
+
 article {
-  // background: rgba(148, 82, 82, 1 );
   #choose {
     margin: 25px auto;
   }
 }
 
+table {
+  width: 100%;
+}
+
 footer {
+  background: rgba(115,  98,  110, 1 );
+  padding: 10px 0 15px;
+  &.row {max-width: none;} 
+  a {
+    color: $vapor;
+  }
   small {
+    color: $vapor;
     display: inline-block;
   }
 }

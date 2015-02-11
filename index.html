@@ -5,44 +5,208 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Animate with CSS</title>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="bower_components/modernizr/modernizr.js"></script>
+
   <link rel="stylesheet" href="css/app.css" />
+
 </head>
 <body>
 
 <header class="row pageHeader">
   <div class="small-12 medium-12 small-centered columns text-center">
     <h1>Animate with CSS</h1>
+    <h4 class="text-center">A collection of animations with explanations.</h4>
   </div>
 </header>
 
 <article class="row">
   <header class="small-9 medium-7 small-centered columns">
-    <h4 class="text-center">A collection of animations with explanations.</h4>
     <select name="chooseAnimation" id="choose">
-      <option value="empty" selected disabled>Please choose an animation</option>
+      <label>choose an animation</label>
+      <option value="empty" selected disabled>Checkout an animation...</option>
       <option value="animationOne">Animation One</option>
       <option value="animationTwo">Animation Two</option>
     </select>
   </header>
-  <section class="large-8 medium-8 medium-centered columns text-center">
-    <p><a href="#">Download animatewithcsscss</a></p>
+ 
+  <section class="small-12 small-centered columns text-center clear">
+    <a href="#" class="button">Download Animate with CSS</a>
+    <table role="CSS Properties">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>background-color</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>background-image</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>background-position</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>border-width</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>border-color</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>border-spacing</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>bottom</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>crop</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>font-size</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>font-weight</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>grid-*</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>left</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>letter-spacing</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>line-height</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>max-height</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>max-width</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>min-height</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>min-width</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>opactiy</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>outline-color</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>outline-offset</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>outline-width</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>right</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>text-indent</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>text-shadow</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>top</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>visibility</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>z-index</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>zoom</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 </article>
 
 <article class="row">
-  
 
+  <section class="small-12">
+    
+  </section>  
 
-  
 </article>
 
-<footer class="row">
-  <section class="large-8 medium-8 medium-centered columns text-center">
-    <p><a href="#">Download animatewithcsscss</a></p>
-  </section>
-  <small class="small-12 text-center">scripted by <a href="http://www.scriptedpixels.co.uk">Scripted Pixels</a></small>
+<footer class="row sticky">
+  <small class="small-12 text-center"><a href="#">Download Animate with CSS</a> &nbsp;|&nbsp;|&nbsp; scripted by <a href="http://www.scriptedpixels.co.uk">Scripted Pixels</a></small>
 </footer>
 
+<script>
+  $(window).bind("load", function () {
+    var footer = $(".sticky");
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.outerHeight();
+    if (height > 0) {
+      footer.css({
+        'margin-top': height + 'px'
+      });
+    }
+  });
+</script>
 </body>
 </html>

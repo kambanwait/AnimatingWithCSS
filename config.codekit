@@ -4269,6 +4269,18 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/README copy.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README copy.md",
+		"outputAbbreviatedPath": "\/README copy.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -4477,7 +4489,7 @@
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
 	"externalServerAddress": "http:\/\/www.kamlocal.dev",
-	"externalServerPreviewPathAddition": "\/animatingwithcss\/",
+	"externalServerPreviewPathAddition": "\/AnimatingWithCSS",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
 	"hamlAutoOutputPathFilenamePattern": "*.html",
